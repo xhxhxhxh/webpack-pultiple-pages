@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ABOUT US</title>
+</head>
+<body>
+<% var localeData=require('../../locale/locale.js') %>
+<%= require('../../sections/header.ejs').default({locale: locale, currentPage: currentPage}) %>
+<div class="banner">
+    <div class="container-fluid">
+        <img src="<%= require('../../images/img_logo.png') %>" alt="" class="small-logo">
+        <h1><%= localeData[locale]['aboutUs'] %></h1>
+        <div class="block"></div>
+    </div>
+</div>
+<main>
+    <p><%= localeData[locale]['FTC1'] %></p>
+    <p><%= localeData[locale]['FTC2'] %></p>
+    <p><%= localeData[locale]['FTC3'] %></p>
+    <p><%= localeData[locale]['FTC4'] %></p>
+    <p><%= localeData[locale]['FTC5'] %></p>
+</main>
+<%= require('../../sections/footer.ejs').default({locale: locale}) %>
+
+</body>
+</html>

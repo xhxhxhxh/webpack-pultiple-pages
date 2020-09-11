@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Logistics Channels</title>
+</head>
+<body>
+<% var localeData=require('../../locale/locale.js') %>
+<%= require('../../sections/header.ejs').default({locale: locale, currentPage: currentPage}) %>
+<div class="banner">
+    <div class="container-fluid">
+        <img src="<%= require('../../images/img_logo.png') %>" alt="" class="small-logo">
+        <h1><%= localeData[locale]['moreLogisticsChannels'] %></h1>
+        <div class="block"></div>
+    </div>
+</div>
+<main>
+    <div class="top-content">
+        <p><%= localeData[locale]['clockworkOrange'] %></p>
+    </div>
+    <div class="image-content">
+        <div class="FTC-express">
+            <img src="<%= require('./images/img_FTC.png') %>" alt="">
+            <div class="content">
+                <h2><%= localeData[locale]['companyAdvantageChannel'] %>-FTC Express</h2>
+                <p><%= localeData[locale]['express1'] %></p>
+            </div>
+        </div>
+        <div class="yun-express">
+            <img src="<%= require('./images/img_yunntu.png') %>" alt="">
+            <div class="content">
+                <h2>Yun Express</h2>
+                <p><%= localeData[locale]['express2'] %></p>
+            </div>
+        </div>
+        <div class="yanwen">
+            <img src="<%= require('./images/img_yanwen.png') %>" alt="">
+            <div class="content">
+                <h2>Yanwen</h2>
+                <p><%= localeData[locale]['express3'] %></p>
+            </div>
+        </div>
+        <div class="ePacket">
+            <img src="<%= require('./images/img_youbao.png') %>" alt="">
+            <div class="content">
+                <h2>ePacket</h2>
+                <p><%= localeData[locale]['express4'] %></p>
+            </div>
+        </div>
+    </div>
+    <div class="DHL-and-fedex">
+        <h2>DHL, Fedex</h2>
+        <p><%= localeData[locale]['DHL1'] %><br><%= localeData[locale]['DHL2'] %></p>
+    </div>
+    <div class="information">
+        <div class="item">
+            <h2><%= localeData[locale]['information1'] %></h2>
+            <img src="<%= require('./images/img_biao_britain,france and germany.png') %>" alt="">
+        </div>
+        <div class="item">
+            <h2><%= localeData[locale]['information2'] %></h2>
+            <img src="<%= require('./images/img_biao_united states.png') %>" alt="">
+        </div>
+        <div class="item">
+            <h2><%= localeData[locale]['information3'] %></h2>
+            <img src="<%= require('./images/img_biao_brazil.png') %>" alt="">
+        </div>
+        <div class="item">
+            <h2><%= localeData[locale]['information4'] %></h2>
+            <img src="<%= require('./images/img_biao_australia.png') %>" alt="">
+        </div>
+    </div>
+</main>
+<%= require('../../sections/footer.ejs').default({locale: locale}) %>
+
+</body>
+</html>

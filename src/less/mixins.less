@@ -1,0 +1,9 @@
+//不同设备尺寸的媒体查询
+.getMediaMinWidth(@index) when(@index >= 1) {
+  @media (min-width:extract(@adapterDeviceList,@index)) {
+    html {
+      font-size: extract(@adapterDeviceList,@index)/@psdWidth * @baseFontSize;
+    }
+  }
+  .getMediaMinWidth(@index - 1);
+};

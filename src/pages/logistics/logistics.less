@@ -1,0 +1,237 @@
+@import "../../less/var.less";
+.banner {
+  height: 600rem/@baseFontSize;
+  background:url("./images/img_wuliu_bg_bannner.png") no-repeat center;
+  background-size: cover;
+  .container-fluid {
+    max-width: 1200rem/@baseFontSize;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 250rem/@baseFontSize;
+    .small-logo {
+      position: absolute;
+      left: 0;
+      top: 30rem/@baseFontSize;
+      width: 170rem/@baseFontSize;
+    }
+    h1 {
+      font-size:70rem/@baseFontSize;
+      color:rgba(255,255,255,1);
+      text-align: center;
+    }
+    .block {
+      position: absolute;
+      left: 50%;
+      top: 353rem/@baseFontSize;
+      width:110rem/@baseFontSize;
+      height:6rem/@baseFontSize;
+      transform: translateX(-50%);
+      background:rgba(255,255,255,1);
+    }
+  }
+}
+
+main {
+  max-width: 1200rem/@baseFontSize;
+  margin: 0 auto;
+  padding-top: 83rem/@baseFontSize;
+  padding-bottom: 400rem/@baseFontSize;
+  .top-content {
+    p {
+      font-size:20rem/@baseFontSize;
+      color:rgba(0,0,0,1);
+      line-height:26rem/@baseFontSize;
+      margin: 0;
+    }
+  }
+  .company-advantage-channel {
+    font-size:24rem/@baseFontSize;
+    color:rgba(0,0,0,1);
+    line-height:31rem/@baseFontSize;
+    margin-bottom: 15rem/@baseFontSize;
+    margin-top: 60rem/@baseFontSize;
+  }
+  .image-content {
+    margin-top: 60rem/@baseFontSize;
+    padding-left: 130rem/@baseFontSize;
+    > div {
+      display: flex;
+      height: 330rem/@baseFontSize;
+      align-items: center;
+      margin-bottom: 60rem/@baseFontSize;
+      img {
+        display: block;
+      }
+      .content {
+        h2 {
+          font-size:24rem/@baseFontSize;
+          color:rgba(0,0,0,1);
+          line-height:31rem/@baseFontSize;
+          margin-bottom: 15rem/@baseFontSize;
+        }
+        p {
+          font-size:20rem/@baseFontSize;
+          color:rgba(0,0,0,1);
+          line-height:26rem/@baseFontSize;
+          margin: 0;
+        }
+      }
+      &.FTC-express {
+        flex-direction: row-reverse;
+        p {
+          margin-right: 60rem/@baseFontSize;
+        }
+      }
+      &.yun-express {
+        img {
+          margin-right: 60rem/@baseFontSize;
+        }
+      }
+      &.yanwen {
+        flex-direction: row-reverse;
+        p {
+          margin-right: 60rem/@baseFontSize;
+        }
+      }
+      &.ePacket {
+        img {
+          margin-right: 60rem/@baseFontSize;
+        }
+      }
+    }
+  }
+  .DHL-and-fedex {
+    margin-bottom: 60rem/@baseFontSize;
+    h2 {
+      font-size:24rem/@baseFontSize;
+      color:rgba(0,0,0,1);
+      line-height:31rem/@baseFontSize;
+      margin-bottom: 20rem/@baseFontSize;
+    }
+    p {
+      font-size:20rem/@baseFontSize;
+      color:rgba(0,0,0,1);
+      line-height:26rem/@baseFontSize;
+      margin: 0;
+    }
+  }
+  .information {
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60rem/@baseFontSize;
+      h2 {
+        font-size:24rem/@baseFontSize;
+        color:rgba(0,0,0,1);
+        line-height:31rem/@baseFontSize;
+        margin-bottom: 40rem/@baseFontSize;
+        text-align: center;
+        width: 886rem/@baseFontSize;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .banner {
+    height: 500rem/@baseFontSize;
+    .container-fluid {
+      padding-top: 218rem/@baseFontSize;
+      .small-logo {
+        display: none;
+      }
+      h1 {
+        font-size: 48rem/@baseFontSize;
+        line-height:62rem/@baseFontSize;
+      }
+      .block {
+        top: 302rem/@baseFontSize;
+        width:120rem/@baseFontSize;
+        height:4rem/@baseFontSize;
+      }
+    }
+  }
+  main {
+    padding: 38rem/@baseFontSize 32rem/@baseFontSize 40rem/@baseFontSize;
+    .top-content {
+      p {
+        font-size:30rem/@baseFontSize;
+        line-height:40rem/@baseFontSize;
+      }
+      h2 {
+        font-size:36rem/@baseFontSize;
+        line-height:48rem/@baseFontSize;
+        margin-top: 40rem/@baseFontSize;
+        margin-bottom: 24rem/@baseFontSize;
+      }
+    }
+    .company-advantage-channel {
+      margin-top: 80rem/@baseFontSize;
+      text-align: center;
+      font-size:48rem/@baseFontSize;
+      line-height:48rem/@baseFontSize;
+      margin-bottom: 24rem/@baseFontSize;
+    }
+    .image-content {
+      margin-top: 80rem/@baseFontSize;
+      padding-left: 0;
+      > div {
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 80rem/@baseFontSize;
+        img {
+          width: 262rem/@baseFontSize;
+          margin-right: 0!important;
+          margin-bottom: 24rem/@baseFontSize;
+        }
+        .content {
+          h2 {
+            text-align: center;
+            font-size:48rem/@baseFontSize;
+            line-height:48rem/@baseFontSize;
+            margin-bottom: 24rem/@baseFontSize;
+          }
+          p {
+            font-size:30rem/@baseFontSize;
+            line-height:40rem/@baseFontSize;
+            margin-right: 0 !important;
+          }
+        }
+        &.FTC-express {
+          flex-direction: column;
+        }
+        &.yanwen {
+          flex-direction: column;
+        }
+      }
+    }
+    .DHL-and-fedex {
+      margin-bottom: 80rem/@baseFontSize;
+      h2 {
+        font-size:36rem/@baseFontSize;
+        line-height:48rem/@baseFontSize;
+        margin-bottom: 34rem/@baseFontSize;
+      }
+      p {
+        font-size:30rem/@baseFontSize;
+        line-height:40rem/@baseFontSize;
+      }
+    }
+    .information {
+      .item {
+        margin-bottom: 80rem/@baseFontSize;
+        h2 {
+          font-size:36rem/@baseFontSize;
+          line-height:48rem/@baseFontSize;
+          margin-bottom: 24rem/@baseFontSize;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

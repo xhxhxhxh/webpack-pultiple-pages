@@ -1,0 +1,73 @@
+@import "../../less/var.less";
+.banner {
+  height: 600rem/@baseFontSize;
+  background:url("./images/img_women_banner.png") no-repeat center;
+  background-size: cover;
+  .container-fluid {
+    max-width: 1200rem/@baseFontSize;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 250rem/@baseFontSize;
+    .small-logo {
+      position: absolute;
+      left: 0;
+      top: 30rem/@baseFontSize;
+      width: 170rem/@baseFontSize;
+    }
+    h1 {
+      font-size:70rem/@baseFontSize;
+      color:rgba(255,255,255,1);
+      text-align: center;
+    }
+    .block {
+      position: absolute;
+      left: 50%;
+      top: 353rem/@baseFontSize;
+      width:110rem/@baseFontSize;
+      height:6rem/@baseFontSize;
+      transform: translateX(-50%);
+      background:rgba(255,255,255,1);
+    }
+  }
+}
+
+main {
+  max-width: 1200rem/@baseFontSize;
+  margin: 0 auto;
+  padding: 80px 0;
+  p {
+    font-size:20px;
+    color:rgba(0,0,0,1);
+    line-height:26px;
+    text-indent: 2em;
+    margin: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .banner {
+    height: 500rem/@baseFontSize;
+    .container-fluid {
+      padding-top: 218rem/@baseFontSize;
+      .small-logo {
+        display: none;
+      }
+      h1 {
+        font-size: 48rem/@baseFontSize;
+        line-height:62rem/@baseFontSize;
+      }
+      .block {
+        top: 302rem/@baseFontSize;
+        width:120rem/@baseFontSize;
+        height:4rem/@baseFontSize;
+      }
+    }
+  }
+  main {
+    padding: 40rem/@baseFontSize 32rem/@baseFontSize;
+    p {
+      font-size:30rem/@baseFontSize;
+      line-height:40rem/@baseFontSize;
+    }
+  }
+}

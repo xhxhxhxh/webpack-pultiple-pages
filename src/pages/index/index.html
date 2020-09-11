@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>FTC 1688</title>
+</head>
+<body>
+<% var localeData=require('../../locale/locale.js') %>
+<%= require('../../sections/header.ejs').default({locale: locale, currentPage: currentPage}) %>
+<div class="banner">
+    <div class="container-fluid">
+        <img src="<%= require('../../images/img_logo.png') %>" alt="" class="small-logo">
+        <img src="<%= require('../../images/img-banner_logo.png') %>" alt="" class="big-logo">
+        <div class="block"></div>
+    </div>
+</div>
+<div class="how-it-works">
+    <div class="work-item">
+        <h1><%= localeData[locale]['howItWorks'] %></h1>
+        <div class="row ml-0 mr-0">
+            <div class="col-md-3 col-6 p-0">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="<%= require('../../images/img_work_zhifu.png') %>" alt="">
+                    </div>
+                    <p><%= localeData[locale]['process1'] %></p>
+                    <span>1</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-0">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="<%= require('../../images/img_work_goumai.png') %>" alt="">
+                    </div>
+                    <p> <%= localeData[locale]['process2'] %></p>
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-0">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="<%= require('../../images/img_work_dingzhi.png') %>" alt="">
+                    </div>
+                    <p><%= localeData[locale]['process3'] %></p>
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-0">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="<%= require('../../images/img_work_yunshu.png') %>" alt="">
+                    </div>
+                    <p><%= localeData[locale]['process4'] %></p>
+                    <span>4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="logistics-query">
+    <div class="container-fluid">
+        <h1><%= localeData[locale]['logisticsTrack'] %></h1>
+        <div class="search">
+            <div class="form-area">
+                <div class="form-box">
+                    <input type="text" class="form-control p-0 track" placeholder="Please enter the waybill number">
+                    <button type="submit" class="btn p-0 submitTrack">
+                        <img src="<%= require('../../images/icon_sousuo.png') %>" alt="">
+                        <span><%= localeData[locale]['track'] %></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="more"><a href="./logistics.html"><%= localeData[locale]['moreLogisticsChannels'] %> ></a></div>
+    </div>
+</div>
+<div class="our-advantage">
+    <div class="container-fluid">
+        <h1><%= localeData[locale]['advantage'] %></h1>
+        <div class="swiper-container">
+            <div class="advantages swiper-wrapper">
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage1'] %></p>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage2'] %></p>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage3'] %></p>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage4'] %></p>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage5'] %></p>
+                </div>
+                <div class="item swiper-slide">
+                    <div class="image"></div>
+                    <p><%= localeData[locale]['advantage6'] %></p>
+                </div>
+            </div>
+        </div>
+        <div class="number">
+            <div>
+                <span class="red">9255万</span>
+                <span class="black"><%= localeData[locale]['tradingVolume'] %></span>
+            </div>
+            <div>
+                <span class="red">32108</span>
+                <span class="black"><%= localeData[locale]['orders'] %></span>
+            </div>
+            <div>
+                <span class="red">180</span>
+                <span class="black"><%= localeData[locale]['countries'] %></span>
+            </div>
+            <div>
+                <span class="red">2.3万+</span>
+                <span class="black"><%= localeData[locale]['clients'] %></span>
+            </div>
+            <div>
+                <span class="red">1000+</span>
+                <span class="black"><%= localeData[locale]['partnerFactories'] %></span>
+            </div>
+        </div>
+        <div class="map">
+            <img src="<%= require('../../images/img_ditu.png') %>" alt="">
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container-fluid">
+            <h1><%= localeData[locale]['customerSay'] %></h1>
+            <div class="comments-box">
+                <div class="item">
+                    <div class="star">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                    </div>
+                    <p class="user">Max Loman</p>
+                    <div class="content"><%= localeData[locale]['comment1'] %></div>
+                </div>
+            </div>
+            <div class="comments-box">
+                <div class="item">
+                    <div class="star">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                    </div>
+                    <p class="user">Angelo Gregoriano</p>
+                    <div class="content"><%= localeData[locale]['comment2'] %></div>
+        </div>
+            </div>
+            <div class="comments-box">
+                <div class="item">
+                    <div class="star">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                        <img src="<%= require('../../images/img_pingjia.png') %>" alt="">
+                    </div>
+                    <p class="user">Chris</p>
+                    <div class="content"><%= localeData[locale]['comment3'] %></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="about-us">
+    <h1><%= localeData[locale]['aboutUs'] %></h1>
+    <div class="content">
+        <div class="line"></div>
+        <img src="<%= require('../../images/img_women.png') %>" alt="">
+        <div class="text">
+            <p><%= localeData[locale]['companyProfile'] %></p>
+            <a href="./about.html">MORE+</a>
+        </div>
+    </div>
+</div>
+<div class="contact-right">
+    <span class="email">
+        <span class="show">shudan@ftc1688.com</span>
+    </span>
+    <span class="phone">
+        <span class="show">+86 18657861297</span>
+    </span>
+    <span class="customer"></span>
+</div>
+<%= require('../../sections/footer.ejs').default({locale: locale}) %>
+</body>
+</html>

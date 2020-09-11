@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="<%= data.locale %>">
+<body>
+<header>
+    <% var localeData=require('../locale/locale.js') %>
+    <p><%= localeData[data.locale]['topTitle'] %></p>
+</header>
+<div class="language">
+    <div class="content">
+        <div class="locale">
+            <span class="dropdown-toggle current-country">AMERICA</span>
+            <ul class="choose">
+                <li>
+                    <a href="/en/<%= data.currentPage %>.html" data-lang="en">
+                        <svg t="1597738343447" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="5680" width="25" height="25">
+                            <path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F0F0F0"
+                                  p-id="5681"></path>
+                            <path d="M489.74 512H1024c0-46.212-6.16-90.98-17.638-133.566H489.74V512zM489.74 244.87h459.112a514.7 514.7 0 0 0-118.14-133.566H489.74v133.566zM512 1024c120.498 0 231.252-41.648 318.712-111.304H193.288C280.748 982.352 391.502 1024 512 1024zM75.148 779.13h873.704a508.948 508.948 0 0 0 57.51-133.566H17.638a508.948 508.948 0 0 0 57.51 133.566z"
+                                  fill="#D80027" p-id="5682"></path>
+                            <path d="M237.168 79.956h46.658l-43.4 31.53 16.578 51.018-43.398-31.53-43.398 31.53 14.32-44.074a514.814 514.814 0 0 0-99.304 110.674h14.95l-27.626 20.07a511.16 511.16 0 0 0-12.388 21.876l13.192 40.602-24.612-17.882a507.134 507.134 0 0 0-16.744 39.746l14.534 44.736h53.644l-43.4 31.53 16.578 51.018-43.398-31.53-25.996 18.888A516.936 516.936 0 0 0 0 512h512V0c-101.144 0-195.43 29.34-274.832 79.956z m19.836 380.844l-43.398-31.53L170.208 460.8l16.578-51.018-43.4-31.53h53.644l16.576-51.018 16.576 51.018h53.644l-43.4 31.53 16.578 51.018z m-16.578-200.166l16.578 51.018-43.398-31.53-43.398 31.53 16.578-51.018-43.4-31.53h53.644l16.576-51.018 16.576 51.018h53.644l-43.4 31.53zM440.656 460.8l-43.398-31.53L353.86 460.8l16.578-51.018-43.4-31.53h53.644l16.576-51.018 16.576 51.018h53.644l-43.4 31.53 16.578 51.018z m-16.578-200.166l16.578 51.018-43.398-31.53-43.398 31.53 16.578-51.018-43.4-31.53h53.644l16.576-51.018 16.576 51.018h53.644l-43.4 31.53z m0-149.148l16.578 51.018-43.398-31.53-43.398 31.53 16.578-51.018-43.4-31.53h53.644l16.576-51.018 16.576 51.018h53.644l-43.4 31.53z"
+                                  fill="#0052B4" p-id="5683"></path>
+                        </svg>
+                        <span>America</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/fr/<%= data.currentPage %>.html" data-lang="fr">
+                        <svg t="1597738295129" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                             xmlns="http://www.w3.org/2000/svg" p-id="4167" width="25" height="25">
+                            <path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F0F0F0"
+                                  p-id="4168"></path>
+                            <path d="M1024 512c0-220.142-138.944-407.812-333.914-480.154v960.31C885.056 919.812 1024 732.142 1024 512z"
+                                  fill="#D80027" p-id="4169"></path>
+                            <path d="M0 512c0 220.142 138.946 407.812 333.914 480.154V31.846C138.946 104.188 0 291.858 0 512z"
+                                  fill="#0052B4" p-id="4170"></path>
+                        </svg>
+                        <span>France</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/es/<%= data.currentPage %>.html" data-lang="es">
+                        <svg t="1597822841962" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2503" width="25" height="25"><path d="M0 512c0 62.628 11.266 122.62 31.846 178.086L512 734.608l480.154-44.522C1012.734 634.62 1024 574.628 1024 512s-11.266-122.62-31.846-178.086L512 289.392 31.846 333.914C11.266 389.38 0 449.372 0 512z" fill="#FFDA44" p-id="2504"></path><path d="M992.154 333.914C919.812 138.946 732.142 0 512 0S104.188 138.946 31.846 333.914h960.308zM31.846 690.086C104.188 885.054 291.858 1024 512 1024s407.812-138.946 480.154-333.914H31.846z" fill="#D80027" p-id="2505"></path></svg>
+                        <span>España</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/de/<%= data.currentPage %>.html" data-lang="de">
+                        <svg t="1597822924881" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2836" width="25" height="25"><path d="M994.85888 341.333333H29.141547C99.413547 142.464 289.06688 0 512.000213 0c222.933333 0 412.586667 142.464 482.858667 341.333333z" fill="#000000" p-id="2837"></path><path d="M29.141547 341.333333h965.717333A511.168 511.168 0 0 1 1024.000213 512c0 59.84-10.261333 117.290667-29.141333 170.666667H29.141547A511.168 511.168 0 0 1 0.000213 512c0-59.84 10.261333-117.290667 29.141334-170.666667z" fill="#E94B35" p-id="2838"></path><path d="M29.141547 682.666667h965.717333C924.58688 881.536 734.933547 1024 512.000213 1024 289.06688 1024 99.413547 881.536 29.141547 682.666667z" fill="#F2C500" p-id="2839"></path></svg>
+                        <span>Deutschland</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <span class="divider"></span>
+        <span class="current-language"></span>
+    </div>
+</div>
+<script>
+  const $locale = document.querySelector('.content .locale')
+  const $chooseArea = document.querySelector('.locale .choose')
+  const $skipArea = document.querySelectorAll('.locale .choose a')
+  const $currentLanguage = document.querySelector('.language .current-language')
+  const $currentCountry = document.querySelector('.language .current-country')
+
+  const locale = getLocalStorage('locale')
+  const lang = document.documentElement.lang
+  const currentPage = getUrl().pop()
+
+  if(locale) {
+    if(locale !== lang) {
+      location.href = '/' + locale + '/' + currentPage
+    }
+  }else {
+    setLocalStorage('locale', lang)
+  }
+
+  let currentLanguage
+  let currentCountry
+  switch (lang) {
+    case 'fr':
+      currentLanguage = 'Français';
+      currentCountry = 'France'
+      break;
+    case 'es':
+      currentLanguage = 'Español';
+      currentCountry = 'España'
+      break;
+    case 'de':
+      currentLanguage = 'Deutsche';
+      currentCountry = 'Deutschland'
+      break;
+    default:
+      currentLanguage = 'English';
+      currentCountry = 'America'
+  }
+  $currentLanguage.innerHTML = currentLanguage
+  $currentCountry.innerHTML = currentCountry
+
+  $locale.onclick = function () {
+    $chooseArea.classList.toggle('show')
+  }
+  $skipArea.forEach(item => {
+    item.onclick = preventDefault
+  })
+
+  function preventDefault(e) {
+    e.stopPropagation()
+    e.preventDefault()
+    const target = findTarget(e.target)
+    if(target) {
+      const lang = target.dataset['lang']
+      const href = target.href
+      console.log(lang, href)
+      setLocalStorage('locale', lang)
+      location.href = href
+    }
+  }
+
+  function setLocalStorage(key, value){
+    const params = JSON.stringify(value);
+    localStorage.setItem(key, params);
+  }
+
+  function getLocalStorage(key){
+    const value = localStorage.getItem(key);
+    if (value === null || value === '') {
+      return null
+    } else {
+      return JSON.parse(localStorage.getItem(key));
+    }
+  }
+
+  function getUrl() {
+    return location.pathname.split('/')
+  }
+
+  function findTarget(target) {
+    const nodeName = target.nodeName
+    if(nodeName !== 'A') {
+      if(target.parentElement) {
+        return findTarget(target.parentElement)
+      }else {
+        return null
+      }
+    }else {
+      return target
+    }
+  }
+</script>
+</body>
+</html>
